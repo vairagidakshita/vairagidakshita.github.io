@@ -1,11 +1,11 @@
+document.getElementById("resumeBtn").addEventListener("click", () => {
+  // Replace with your actual resume file path
+  const resumePath = "assets/Dakshita_Vairagi_CV.pdf";
 
-function toggleMode() {
-  const body = document.body;
-  if (body.style.backgroundColor === 'white') {
-    body.style.backgroundColor = '#0f172a';
-    body.style.color = 'white';
-  } else {
-    body.style.backgroundColor = 'white';
-    body.style.color = '#111';
-  }
-}
+  const link = document.createElement("a");
+  link.href = resumePath;
+  link.download = "Dakshita_Vairagi_Resume.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+});
