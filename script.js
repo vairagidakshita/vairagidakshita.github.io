@@ -1,6 +1,6 @@
 document.getElementById("resumeBtn").addEventListener("click", () => {
   // Replace with your actual resume file path
-  const resumePath = "assets/Dakshita_Vairagi_CV.pdf";
+  const resumePath = "Dakshita_Vairagi_CV.pdf";
 
   const link = document.createElement("a");
   link.href = resumePath;
