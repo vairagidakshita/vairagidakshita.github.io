@@ -1,5 +1,4 @@
 document.getElementById("resumeBtn").addEventListener("click", () => {
-  // Replace with your actual resume file path
   const resumePath = "Dakshita_Vairagi_CV.pdf";
 
   const link = document.createElement("a");
