@@ -1,12 +1,12 @@
-/* Global Styles */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #0a1a2f; /* Dark Blue */
+  background-color: #0a1a2f;
   color: #ffffff;
+  scroll-behavior: smooth;
 }
 
-/* Hero Section */
+/* HERO */
 .hero {
   display: flex;
   justify-content: space-between;
@@ -14,50 +14,38 @@ body {
   padding: 60px 10%;
 }
 
-/* Name Styling */
 .hero-text h1 {
-  font-size: 3.2rem;
-  font-weight: bold;
-  color: #6ec1ff; /* Light Blue */
-  margin: 0;
+  font-size: 3.4rem;
+  color: #6ec1ff;
   text-align: center;
 }
 
 .role {
   text-align: center;
-  font-size: 1.2rem;
   margin: 10px 0 20px;
-  color: #ffffff;
 }
 
-/* Resume Button */
 .resume-btn {
   display: block;
   margin: 0 auto;
   padding: 12px 24px;
-  font-size: 1rem;
-  background-color: #6ec1ff;
+  background: #6ec1ff;
   color: #0a1a2f;
+  font-weight: bold;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-weight: bold;
 }
 
-.resume-btn:hover {
-  background-color: #4aaeff;
-}
-
-/* Profile Image */
 .hero-image img {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
+  width: 230px;
+  height: 230px;
   border-radius: 50%;
   border: 3px solid #6ec1ff;
+  object-fit: cover;
 }
 
-/* Sections */
+/* SECTIONS */
 section {
   padding: 40px 10%;
 }
@@ -67,24 +55,56 @@ h2 {
   margin-bottom: 20px;
 }
 
-h3 {
-  color: #6ec1ff;
-}
-
-/* Project Card */
+/* PROJECT CARD */
 .project-card {
-  background-color: #102b4f;
+  background: #102b4f;
   padding: 20px;
   border-radius: 8px;
 }
 
-/* Paragraphs */
-p {
-  color: #ffffff;
-  line-height: 1.6;
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
-/* Contact */
+.skill-card {
+  background: #102b4f;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.progress {
+  background: #1e3f66;
+  height: 8px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.progress span {
+  display: block;
+  height: 100%;
+  background: #6ec1ff;
+  border-radius: 10px;
+}
+
+/* CERTIFICATIONS */
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.badge {
+  background: #102b4f;
+  padding: 10px 16px;
+  border-radius: 20px;
+  color: #6ec1ff;
+  font-size: 0.9rem;
+}
+
+/* CONTACT */
 ul {
   list-style: none;
   padding: 0;
@@ -99,17 +119,12 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
     text-align: center;
   }
-
   .hero-image {
     margin-top: 30px;
   }
