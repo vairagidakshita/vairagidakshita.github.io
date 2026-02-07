@@ -90,71 +90,10 @@ h2 {
 }
 
 /* CERTIFICATIONS */
-//*.cert-grid {
+.cert-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-}*//
-.cert-section {
-    padding: 50px 0;
-    background-color: #f9f9f9; /* Light background to make cards pop */
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2rem;
-    color: #333;
-}
-
-.cert-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    padding: 0 20px;
-}
-
-.cert-card {
-    background: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.cert-card:hover {
-    transform: translateY(-10px); /* Lifts the card when you hover */
-}
-
-.cert-image img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover; /* Keeps images looking sharp and uniform */
-    border-bottom: 2px solid #eee;
-}
-
-.cert-info {
-    padding: 15px;
-    text-align: left;
-}
-
-.cert-info h3 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-    color: #2c3e50;
-}
-
-.cert-info p {
-    margin: 0;
-    color: #7f8c8d;
-}
-
-.badge {
-  background: #102b4f;
-  padding: 10px 16px;
-  border-radius: 20px;
-  color: #6ec1ff;
-  font-size: 0.9rem;
 }
 
 /* CONTACT */
